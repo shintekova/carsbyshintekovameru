@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VELOCITY — Automotive Experience</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">
+            VELOCITY
+        </div>
+
+        <div class="loader-bar">
+            <span></span>
+        </div>
+
+        <div class="loader-text">
+            INITIALIZING EXPERIENCE
+        </div>
+    </div>
+
+
+    <!-- CURSOR -->
+
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+
+
+    <!-- BACKGROUND -->
+
+    <div class="noise"></div>
+
+    <div class="grid-background"></div>
+
+    <div class="light light-blue"></div>
+    <div class="light light-red"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="index.html" class="brand">
+            V<span>EL</span>OCITY
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="#home">
+                HOME
+            </a>
+
+            <a href="#brands">
+                BRANDS
+            </a>
+
+            <a href="#history">
+                HISTORY
+            </a>
+
+        </nav>
+
+        <button
+            class="menu-button"
+            onclick="toggleMenu()"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#home" onclick="toggleMenu()">
+            HOME
+        </a>
+
+        <a href="#brands" onclick="toggleMenu()">
+            BRANDS
+        </a>
+
+        <a href="#history" onclick="toggleMenu()">
+            HISTORY
+        </a>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    AUTOMOTIVE EXPERIENCE
+                </div>
+
+                <h1>
+                    DRIVE
+                    <span>THE</span>
+                    <strong>EXTRAORDINARY.</strong>
+                </h1>
+
+                <p>
+                    Открой мир легендарных автомобилей,
+                    технологий, скорости и дизайна.
+                </p>
+
+                <a
+                    href="#brands"
+                    class="explore-button"
+                >
+                    <span>EXPLORE COLLECTION</span>
+                    <b>↗</b>
+                </a>
+
+            </div>
+
+
+            <div class="hero-car">
+
+                <div class="car-glow"></div>
+
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+
+                <img
+                    src="images/bmw.jpg"
+                    alt="BMW"
+                    id="heroCar"
+                >
+
+                <div class="car-name">
+                    BMW
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom">
+
+                <span>
+                    SCROLL TO EXPLORE
+                </span>
+
+                <div class="scroll-line"></div>
+
+                <span>
+                    01 / 06
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- BRANDS -->
+
+        <section
+            class="brands-section"
+            id="brands"
+        >
+
+            <div class="section-top">
+
+                <div>
+
+                    <div class="eyebrow">
+                        THE COLLECTION
+                    </div>
+
+                    <h2>
+                        SIX
+                        <span>LEGENDS.</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Выбери марку и погрузись
+                    в её отдельный мир.
+                    История, модели, технологии
+                    и характер каждого бренда.
+                </p>
+
+            </div>
+
+
+            <div class="brands-grid">
+
+
+                <!-- BMW -->
+
+                <a
+                    href="bmw.html"
+                    class="brand-card blue"
+                >
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <div class="card-country">
+                        GERMANY
+                    </div>
+
+                    <div class="card-light"></div>
+
+                    <img
+                        src="images/bmw.jpg"
+                        alt="BMW"
+                    >
+
+                    <div class="card-content">
+
+                        <small>
+                            PERFORMANCE
+                        </small>
+
+                        <h3>
+                            BMW
+                        </h3>
+
+                        <p>
+                            THE ULTIMATE
+                            DRIVING MACHINE
+                        </p>
+
+                        <div class="card-arrow">
+                            EXPLORE <span>↗</span>
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <!-- MERCEDES -->
+
+                <a
+                    href="mercedes.html"
+                    class="brand-card silver"
+                >
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <div class="card-country">
+                        GERMANY
+                    </div>
+
+                    <div class="card-light"></div>
+
+                    <img
+                        src="images/mercedes.jpg"
+                        alt="Mercedes"
+                    >
+
+                    <div class="card-content">
+
+                        <small>
+                            LUXURY
+                        </small>
+
+                        <h3>
+                            MERCEDES
+                        </h3>
+
+                        <p>
+                            THE BEST OR NOTHING
+                        </p>
+
+                        <div class="card-arrow">
+                            EXPLORE <span>↗</span>
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <!-- AUDI -->
+
+                <a
+                    href="audi.html"
+                    class="brand-card red"
+                >
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <div class="card-country">
+                        GERMANY
+                    </div>
+
+                    <div class="card-light"></div>
+
+                    <img
+                        src="images/audi.jpg"
+                        alt="Audi"
+                    >
+
+                    <div class="card-content">
+
+                        <small>
+                            TECHNOLOGY
+                        </small>
+
+                        <h3>
+                            AUDI
+                        </h3>
+
+                        <p>
+                            VORSPRUNG DURCH TECHNIK
+                        </p>
+
+                        <div class="card-arrow">
+                            EXPLORE <span>↗</span>
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PORSCHE -->
+
+                <a
+                    href="porsche.html"
+                    class="brand-card orange"
+                >
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <div class="card-country">
+                        GERMANY
+                    </div>
+
+                    <div class="card-light"></div>
+
+                    <img
+                        src="images/porsche.jpg"
+                        alt="Porsche"
+                    >
+
+                    <div class="card-content">
+
+                        <small>
+                            SPORT
+                        </small>
+
+                        <h3>
+                            PORSCHE
+                        </h3>
+
+                        <p>
+                            THERE IS NO SUBSTITUTE
+                        </p>
+
+                        <div class="card-arrow">
+                            EXPLORE <span>↗</span>
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <!-- FERRARI -->
+
+                <a
+                    href="ferrari.html"
+                    class="brand-card ferrari"
+                >
+
+                    <div class="card-number">
+                        05
+                    </div>
+
+                    <div class="card-country">
+                        ITALY
+                    </div>
+
+                    <div class="card-light"></div>
+
+                    <img
+                        src="images/ferrari.jpg"
+                        alt="Ferrari"
+                    >
+
+                    <div class="card-content">
+
+                        <small>
+                            RACING
+                        </small>
+
+                        <h3>
+                            FERRARI
+                        </h3>
+
+                        <p>
+                            THE ART OF PERFORMANCE
+                        </p>
+
+                        <div class="card-arrow">
+                            EXPLORE <span>↗</span>
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <!-- LAMBORGHINI -->
+
+                <a
+                    href="lamborghini.html"
+                    class="brand-card yellow"
+                >
+
+                    <div class="card-number">
+                        06
+                    </div>
+
+                    <div class="card-country">
+                        ITALY
+                    </div>
+
+                    <div class="card-light"></div>
+
+                    <img
+                        src="images/lamborghini.jpg"
+                        alt="Lamborghini"
+                    >
+
+                    <div class="card-content">
+
+                        <small>
+                            SUPERCAR
+                        </small>
+
+                        <h3>
+                            LAMBORGHINI
+                        </h3>
+
+                        <p>
+                            EXPECT THE UNEXPECTED
+                        </p>
+
+                        <div class="card-arrow">
+                            EXPLORE <span>↗</span>
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORY -->
+
+        <section
+            class="history-section"
+            id="history"
+        >
+
+            <div class="history-image">
+
+                <img
+                    src="images/ferrari.jpg"
+                    alt="Ferrari"
+                >
+
+            </div>
+
+            <div class="history-content">
+
+                <div class="eyebrow">
+                    AUTOMOTIVE HISTORY
+                </div>
+
+                <h2>
+                    MORE THAN
+                    <span>A MACHINE.</span>
+                </h2>
+
+                <p>
+                    Автомобиль — это не просто
+                    средство передвижения.
+
+                    За каждой легендарной моделью
+                    стоят годы инженерных разработок,
+                    дизайн, соревнования и люди,
+                    которые изменили автомобильный мир.
+                </p>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>100+</strong>
+                        <span>YEARS OF HISTORY</span>
+                    </div>
+
+                    <div>
+                        <strong>06</strong>
+                        <span>LEGENDARY BRANDS</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>PASSION</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div class="footer-logo">
+                VELOCITY
+            </div>
+
+            <div>
+                AUTOMOTIVE EXPERIENCE
+            </div>
+
+            <div>
+                © 2026
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<a href="bmw.html">BMW</a>
+<a href="mercedes.html">MERCEDES</a>
+<a href="audi.html">AUDI</a>
+<a href="porsche.html">PORSCHE</a>
+<a href="ferrari.html">FERRARI</a>
+<a href="lamborghini.html">LAMBORGHINI</a>
+
+
